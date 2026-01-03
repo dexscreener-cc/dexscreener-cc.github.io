@@ -1,0 +1,167 @@
+{
+  "settings": {
+    "name": "dexscreener-cc",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/dexscreener256.jpeg",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://dexscreener-cc.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://dexscreener-cc.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 4,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DEXSCREENER™ | Track Your Dex Screener Trades",
+        "meta_descr": "Dexscreener is a real-time analytics platform for decentralized exchanges, tracking token prices, liquidity, volume, and trends across blockchains.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://dexscreener.com/\"><img src=\"@PROJECT_PATH@/assets/images/dex-screener-1st-page.png\" alt=\"dexscreener\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "v7e9E7k2Tw",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://dexscreener.com/\"><img src=\"@PROJECT_PATH@/assets/images/dex-screener-2nd-page.png\" alt=\"dexscreener\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "v7e9NbiVsQ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-2"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://dexscreener.com/\" class=\"text-primary\">DEXScreener</a> - Track Your DEXScreener Trades</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a>: A Real-Time Analytics Platform for Decentralized Exchanges</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a>: A Real-Time Analytics Platform for Decentralized Exchanges<br><br>As decentralized finance (DeFi) continues to expand, traders and investors need reliable tools to track token prices, liquidity, and market trends across multiple blockchains. Dexscreener is one of the most widely used analytics platforms designed specifically to monitor activity on decentralized exchanges (DEXs). It provides real-time data that helps users understand market movements without relying on centralized platforms.<br><br>What Is <a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a>?<br><br><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> is a web-based analytics tool that tracks token trading activity across hundreds of decentralized exchanges on multiple blockchains. Unlike centralized exchanges, DEXs operate directly on blockchain networks, making transparency and on-chain data analysis essential. Dexscreener collects this public data and presents it in an easy-to-read format.<br><br>The platform allows users to monitor:<br><br>Token price movements<br><br>Trading volume<br><br>Liquidity levels<br><br>Price charts and trends<br><br>New and trending token pairs<br><br><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> is commonly used by traders, researchers, and developers who want real-time insights into DeFi markets.<br><br>Supported Blockchains and Ecosystem Coverage<br><br>Dexscreener supports a wide range of blockchain networks, including popular ecosystems such as:<br><br>Ethereum<br><br>BNB Chain<br><br>Solana<br><br>Polygon<br><br>Arbitrum<br><br>Avalanche<br><br>Sui and other emerging networks<br><br>By aggregating data from multiple chains, <a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> enables users to compare activity across ecosystems in one place.<br><br>Key Features of <a href=\"https://dexscreener-cc.github.io/\" class=\"text-primary\">Dexscreener</a><br>1. Real-Time Price Charts<br><br>Dexscreener provides interactive price charts with customizable timeframes. Users can view short-term price fluctuations or long-term trends, helping them analyze market behavior.<br><br>2. Liquidity and Volume Tracking<br><br>The platform displays liquidity pools and trading volume for each token pair. This information helps users understand how actively a token is being traded and how stable the market may be.<br><br>3. Pair and Token Discovery<br><br><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> highlights:<br><br>Newly created trading pairs<br><br>Trending tokens<br><br>High-volume assets<br><br>This feature is especially useful for discovering new tokens early, though it also requires careful research and risk awareness.<br><br>4. Transaction Activity Monitoring<br><br>Users can view recent buy and sell transactions in real time, including transaction size and frequency. This allows traders to observe market momentum and trading patterns.<br><br>5. Multi-DEX Comparison<br><br><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> aggregates data from many decentralized exchanges, making it easy to compare prices and liquidity across different platforms without switching websites.<br><br>Importance of Dexscreener in DeFi<br><br><a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> plays a crucial role in the decentralized finance ecosystem by promoting transparency and accessibility:<br><br>Market Transparency: All data shown comes directly from public blockchain transactions.<br><br>Informed Decision-Making: Traders can analyze price action and liquidity before interacting with a token.<br><br>Ecosystem Growth: Developers and analysts use Dexscreener to observe trends and understand user behavior in DeFi markets.<br><br>Decentralization Support: The platform aligns with DeFi principles by relying on on-chain data rather than centralized price feeds.<br><br>Risks and Responsible Usage<br><br>While <a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> is a powerful analytics tool, it does not verify the quality or safety of tokens. Users should be cautious, especially with newly launched or low-liquidity assets. High volatility, scams, or misleading token data can exist in decentralized markets.<br><br><a href=\"https://dexscreener-cc.github.io/\" class=\"text-primary\">Dexscreener</a> provides information, not financial advice, so users should always conduct independent research and use trusted wallets and platforms.<br><br>Future Outlook<br><br>As DeFi continues to grow across new blockchains, <a href=\"https://dexscreener.com/\" class=\"text-primary\">Dexscreener</a> is expected to expand its features, improve analytics, and support more networks. Its role as a real-time DeFi market intelligence platform makes it an essential tool for navigating decentralized trading environments.<br><br>Conclusion<br><br>Dexscreener is a vital analytics platform for anyone interested in decentralized exchanges and DeFi markets. By offering real-time price tracking, liquidity insights, and multi-chain support, it helps users better understand on-chain trading activity. As decentralized finance evolves, tools like Dexscreener will remain key to ensuring transparency, accessibility, and informed participation in blockchain ecosystems.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "v7e9NOyy51",
+          "_anchor": "article07-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
